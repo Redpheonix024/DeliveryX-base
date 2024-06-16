@@ -28,10 +28,10 @@ app.use(session({
   secret: sessionSecret,
   resave: false,
   saveUninitialized: true,
-  // store: MongoStore.create({
-  //   mongoUrl: 'mongodb://localhost:27017/session-store', // Change to your MongoDB connection string
-  //   ttl: 14 * 24 * 60 * 60 // Session expiration time in seconds
-  // })
+  store: MongoStore.create({
+    mongoUrl: 'mongodb+srv://palakkadjishnu0:<password>@cluster0.ywbf87e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/session-store', // Change to your MongoDB connection string
+    ttl: 14 * 24 * 60 * 60 // Session expiration time in seconds
+  })
 }));
 // app.use(flashMiddleware);
 
