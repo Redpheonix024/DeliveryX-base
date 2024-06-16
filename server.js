@@ -66,6 +66,6 @@ initializeSocket(httpsServer);
 
 
 // Start server
-httpsServer.listen(PORT, '192.168.1.58', () => {
-  console.log(`Server is running on https://192.168.1.58:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
