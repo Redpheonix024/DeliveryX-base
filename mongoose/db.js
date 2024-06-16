@@ -4,7 +4,7 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb://localhost:27017/userAuthDB', {
+    await mongoose.connect('mongodb+srv://palakkadjishnu0:<password>@cluster0.ywbf87e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
       // useNewUrlParser: true,
       // useUnifiedTopology: true
     });
