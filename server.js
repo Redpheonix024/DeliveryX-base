@@ -28,10 +28,10 @@ app.use(session({
   secret: sessionSecret,
   resave: false,
   saveUninitialized: true,
-  store: MongoStore.create({
-    mongoUrl: process.env.MONGO_URI, // Change to your MongoDB connection string
-    ttl:   60 // Session expiration time in seconds
-  })
+  // store: MongoStore.create({
+  //   mongoUrl: process.env.MONGO_URI, // Change to your MongoDB connection string
+  //   ttl:   60 // Session expiration time in seconds
+  // })
 }));
 // app.use(flashMiddleware);
 
